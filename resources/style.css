@@ -8,8 +8,9 @@ body {
 /* Setting up the main grid template */
 
 .container {
-    background-image: url("Images/map-background-image.jpg");
-    background-size: auto 1500px;
+    /* background-image: url("Images/map-background-image.jpg");
+    background-size: auto 1500px; */
+    background-color: rgb(250, 247, 224);
     width: 100%;
     height: 1000px;
     display: grid;
@@ -24,7 +25,7 @@ body {
 }
 
 .cell {
-    background-color: rgb(255, 255, 255,0.8);
+    /*background-color: rgb(255, 255, 255,0.8);*/
     
 }
 
@@ -45,12 +46,18 @@ body {
     font-size: 1.7em;
     background-color: rgb(142, 153, 99);
     padding: 10px 40px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: solid black;
 }
 
 .heading h1, h3 {
     padding: 0px;
     margin: 0px;
+}
+
+.heading img {
+    width: 50px;
+    height: auto;
 }
 
 
@@ -70,6 +77,13 @@ body {
     text-decoration: none;
     color: black;
     font-family: 'Cormorant Infant', serif;
+    transition: border-top 0.1s linear 0.1s, border-bottom 0.1s linear 0.1s;
+}
+
+.navBar a:hover {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+   /* border-top: 1px solid grey; */
 }
 
 /* Content area */
