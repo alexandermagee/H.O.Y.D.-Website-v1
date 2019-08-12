@@ -1,5 +1,7 @@
 * {
-    font-family: 'Fondamento', cursive;
+    /*font-family: 'Fondamento', cursive;*/
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -8,11 +10,12 @@ body {
 /* Setting up the main grid template */
 
 .container {
-    /* background-image: url("Images/map-background-image.jpg");
-    background-size: auto 1500px; */
-    background-color: rgb(250, 247, 224);
+    border: ridge 5px rgb(107, 71, 36);
+    background-image: url("Images/background.JPG");
+    background-size: auto 1500px; 
+    /*background-color: rgb(255, 255, 255,0.3); */
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2fr 1fr 70% 1fr 1fr;
@@ -25,7 +28,7 @@ body {
 }
 
 .cell {
-    /*background-color: rgb(255, 255, 255,0.8);*/
+    background-color: rgb(255, 255, 255,0.3);
     
 }
 
@@ -39,6 +42,7 @@ body {
     align-items: center;
     border: none;
     padding-top: 5px;
+    background-color: rgb(255, 255, 255,0.6);
 }
 
 .heading div {
@@ -47,12 +51,22 @@ body {
     background-color: rgb(142, 153, 99);
     padding: 10px 40px;
     border-radius: 5px;
-    border: solid black;
+    border: double 5px black;
+}
+
+.heading h1 {
+    font-family: 'Fondamento', cursive;
+    text-shadow: 2px 2px 5px rgb(65, 61, 61);
 }
 
 .heading h1, h3 {
     padding: 0px;
     margin: 0px;
+}
+
+.heading h3 {
+    font-family: 'Cormorant Infant', serif;
+    text-shadow: 1px 1px 2px rgb(65, 61, 61);
 }
 
 .heading img {
@@ -70,6 +84,7 @@ body {
     align-items: flex-end;
     border: none;
     padding: 0px 20%;
+    background-color: rgb(255, 255, 255,0.6);
 }
 
 .navBar a {
@@ -77,7 +92,7 @@ body {
     text-decoration: none;
     color: black;
     font-family: 'Cormorant Infant', serif;
-    transition: border-top 0.1s linear 0.1s, border-bottom 0.1s linear 0.1s;
+    transition: border-top 3s linear 0.1s, border-bottom 3s linear 0.1s;
 }
 
 .navBar a:hover {
@@ -94,6 +109,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    font-family: 'Cormorant Infant', serif;
 }
 
 .box {
@@ -103,8 +119,14 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    align-items: center;
     text-align: center;
-    background-image: url("https://via.placeholder.com/500x300");
+    /*background-image: url("https://via.placeholder.com/500x300");*/
+    border-radius: 2px;
+    box-shadow: 8px 8px 5px rgb(90, 88, 88,0.4);
+    background-size: cover;
+    /*border: ridge 5px rgb(107, 71, 36) */
+    border: solid 1px white;
 }
 
 .box h2 strong {
@@ -112,6 +134,42 @@ body {
 }
 
 .box h2 p {
-    font-family: 'Cormorant Infant', serif;
+    /*font-family: 'Cormorant Infant', serif;*/
 }
 
+.box p {
+    opacity: 0;
+    transition: opacity 5s;
+    background-color:rgb(248, 233, 173,0.9);
+    padding: 10px 10px;
+    margin: 2px 2px;
+    border: 1px solid black;
+}
+
+.box h2 {
+    background-color:rgb(248, 233, 173,0.9);
+    transition: font-size 2s;
+    width: fit-content;
+    padding: 5px 5px;
+    border-radius: 2px;
+    border: 1px solid white;
+    margin-top: 2px;
+}
+
+.box:hover p {
+    opacity: 1;
+}
+
+.box:hover h2 {
+    font-size: 1.6em;
+}
+
+/*individual boxes in content area */
+
+.when {
+    background-image: url("Images/Tudor door.JPG");
+}
+
+.why {
+    background-image: url("Images/Homepage tollhouse.jpg");
+}
