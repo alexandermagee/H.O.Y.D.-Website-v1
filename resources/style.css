@@ -2,6 +2,9 @@
     font-family: 'Fondamento', cursive;
 }
 
+body {
+}
+
 /* Setting up the main grid template */
 
 .container {
@@ -21,7 +24,6 @@
 }
 
 .cell {
-    border: solid green;
     background-color: rgb(255, 255, 255,0.8);
     
 }
@@ -35,6 +37,7 @@
     justify-items: center;
     align-items: center;
     border: none;
+    padding-top: 5px;
 }
 
 .heading div {
@@ -80,7 +83,6 @@
 }
 
 .box {
-    border: solid blue;
     max-width: 40%;
     height: 40%;
     margin: 20px 20px;
