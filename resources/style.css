@@ -8,10 +8,10 @@
 }
 
 body {
-    min-height: fit-content;
+    height: 100%;
     padding-bottom: 0px;
-    border: ridge 15px rgb(107, 71, 36);
-    background-color: rgb(248, 233, 173,0.8);
+    border: ridge 15px rgba(107, 71, 36,1);
+    background-color: rgba(248, 233, 173,0.8);
 }
 
 /* Setting up the main grid template */
@@ -19,12 +19,12 @@ body {
 .container {
     background-image: url("Images/background.JPG");
     background-size: auto 1500px; 
-    /*background-color: rgb(255, 255, 255,0.3); */
+    /*background-color: rgba(255, 255, 255,0.3); */
     width: 100%;
     min-height: 1200px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr 70% 1.25fr 0.75fr;
+    grid-template-rows: minmax(14%,170px) minmax(6%,72px) minmax(68%,816px) 8% 4%;
     grid-template-areas: 
     "heading"
     "navBar"
@@ -34,8 +34,7 @@ body {
 }
 
 .cell {
-    background-color: rgb(255, 255, 255,0.3);
-    
+    background-color: rgba(255, 255, 255,0.3);
 }
 
 
@@ -48,13 +47,13 @@ body {
     align-items: center;
     border: none;
     padding-top: 10px;
-    background-color: rgb(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173,0.8);
 }
 
 .heading div {
     text-align: center;
     font-size: 1.7em;
-    background-color: rgb(142, 153, 99);
+    background-color: rgba(142, 153, 99,1);
     padding: 10px 40px;
     border-radius: 5px;
     border: double 5px black;
@@ -62,7 +61,7 @@ body {
 
 .heading h1 {
     font-family: 'Fondamento', cursive;
-    text-shadow: 2px 2px 5px rgb(65, 61, 61);
+    text-shadow: 2px 2px 5px rgba(65, 61, 61,1);
 }
 
 .heading h1, h3 {
@@ -72,7 +71,7 @@ body {
 
 .heading h3 {
     font-family: 'Cormorant Infant', serif;
-    text-shadow: 1px 1px 2px rgb(65, 61, 61);
+    text-shadow: 1px 1px 2px rgba(65, 61, 61,1);
 }
 
 .heading img {
@@ -90,7 +89,7 @@ body {
     align-items: center;
     border: none;
     padding: 0px 20%;
-    background-color: rgb(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173,0.8);
     border-bottom: double 5px black;
 }
 
@@ -117,8 +116,8 @@ body {
     align-content: center;
     justify-content: center;
     font-family: 'Cormorant Infant', serif;
-    color: rgb(43, 39, 39);
-    background-color: rgb(255, 255, 255,0.4);
+    color: rgba(43, 39, 39,1);
+    background-color: rgba(255, 255, 255,0.4);
 }
 
 .box {
@@ -132,10 +131,10 @@ body {
     text-align: center;
     /*background-image: url("https://via.placeholder.com/500x300");*/
     border-radius: 2px;
-    box-shadow: 8px 8px 5px rgb(90, 88, 88,0.4);
+    box-shadow: 8px 8px 5px rgba(90, 88, 88,0.4);
     background-size: cover;
-    /*border: ridge 5px rgb(107, 71, 36) */
-    border: solid 2px rgb(43, 39, 39);
+    /*border: ridge 5px rgba(107, 71, 36) */
+    border: solid 2px rgba(43, 39, 39,1);
 }
 
 .box h2 strong {
@@ -149,20 +148,20 @@ body {
 .box p {
     opacity: 0;
     transition: opacity 5s;
-    background-color:rgb(248, 233, 173,0.9);
+    background-color:rgba(248, 233, 173,0.9);
     padding: 10px 10px;
     margin: 2px 2px;
-    border: 1px solid rgb(43, 39, 39);
+    border: 1px solid rgba(43, 39, 39,1);
     border-radius: 2px;
 }
 
 .box h2 {
-    background-color:rgb(248, 233, 173,0.9);
+    background-color:rgba(248, 233, 173,0.9);
     transition: font-size 2s;
     width: 90%;
     padding: 5px 5px;
     border-radius: 2px;
-    border: 1px solid rgb(43, 39, 39);
+    border: 1px solid rgba(43, 39, 39,1);
     margin-top: 0px;
 }
 
@@ -175,7 +174,7 @@ body {
 }
 
 .box p:hover {
-    color: rgb(15, 104, 104);
+    color: rgba(15, 104, 104,1);
     cursor: pointer;
 }
 
@@ -211,37 +210,37 @@ body {
     align-items: flex-start;
     justify-content: center;
     font-family: 'Fondamento', cursive;
-    background-color: rgb(255, 255, 255,0.4);
+    background-color: rgba(255, 255, 255,0.4);
 }
 
 .findMore h2 {
     font-size: 2.2em;
-    background: rgb(142, 153, 99);
+    background: rgba(142, 153, 99,1);
     width: fit-content;
     height: fit-content;
     padding: 10px 10px;
     border-radius: 5px;
     border: double 5px black;
-    text-shadow: 1px 1px 2px rgb(65, 61, 61);
+    text-shadow: 1px 1px 2px rgba(65, 61, 61,1);
     transition: font-size 1s linear;
 }
 
 .findMore h2:hover {
     font-size: 2.3em;
     cursor: pointer;
-    color: rgb(13, 61, 61);
+    color: rgba(13, 61, 61,1);
 }
 
 /* Footer area */
 
 .footer {
     grid-area: footer;
-    background-color: rgb(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173,0.8);
     border-top: double 5px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Cormorant Infant', serif;
-    color:rgb(43, 39, 39);
+    color:rgba(43, 39, 39,1);
     padding: 0px 5px;
 }
