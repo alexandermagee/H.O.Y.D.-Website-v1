@@ -21,10 +21,10 @@ body {
     background-size: auto 1500px; 
     /*background-color: rgba(255, 255, 255,0.3); */
     width: 100%;
-    min-height: 1200px;
+    min-height: fit-content;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: minmax(14%,170px) minmax(6%,72px) minmax(68%,816px) 8% 4%;
+    grid-template-rows: fit-content fit-content fit-content fit-content 20%;
     grid-template-areas: 
     "heading"
     "navBar"
@@ -46,7 +46,7 @@ body {
     justify-items: center;
     align-items: center;
     border: none;
-    padding-top: 10px;
+    padding: 10px 0px;
     background-color: rgba(248, 233, 173,0.8);
     height: 100%;
     width: 100%;
@@ -54,13 +54,16 @@ body {
 
 .heading div {
     /*text-align: center; */
-    font-size: 1.7em;
+    /*font-size: 1.7em; */
+    font-size: 2.2vw;
+    text-align: center;
     background-color: rgba(142, 153, 99,1);
     /*padding: 10px 40px; */
     border-radius: 5px;
     border: double 5px black;
     width: 85%;
-    height: 90%;
+    height: 100%;
+    padding: 20px 20px;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 60% 40%;
@@ -76,6 +79,7 @@ body {
     height: 90%;
     font-family: 'Fondamento', cursive;
     text-shadow: 2px 2px 5px rgba(65, 61, 61,1);
+    white-space: nowrap;
 }
 
 .heading h1, h3 {
@@ -91,7 +95,7 @@ body {
 
 .heading img {
     /*max-height: 90%;*/
-    max-height: 120px;
+    max-height: 110px;
     min-height: 30px;
     grid-area: img;
     border: double 4px black;
@@ -104,12 +108,12 @@ body {
 .navBar {
     grid-area: navBar;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border: none;
-    padding: 0px 20%;
     background-color: rgba(248, 233, 173,0.8);
     border-bottom: double 5px black;
+    padding: 0px 20% 10px 20%;
 }
 
 .navBar a {
@@ -138,12 +142,14 @@ body {
     font-family: 'Cormorant Infant', serif;
     color: rgba(43, 39, 39,1);
     background-color: rgba(255, 255, 255,0.4);
+    padding: 40px 0px;
 }
 
 .box {
-    max-width: 40%;
-    height: 40%;
-    margin: 20px 20px;
+    max-width: 40vw;
+    min-width: 350px;
+    min-height: 350px;
+    margin: 1vw 1vw;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -183,6 +189,7 @@ body {
     border-radius: 2px;
     border: 1px solid rgba(43, 39, 39,1);
     margin-top: 0px;
+    font-size: 1.8vw;
 }
 
 .box:hover p {
@@ -190,7 +197,7 @@ body {
 }
 
 .box:hover h2 {
-    font-size: 1.6em;
+    font-size: 1.9vw;
 }
 
 .box p:hover {
@@ -239,6 +246,7 @@ body {
     width: fit-content;
     height: fit-content;
     padding: 10px 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: double 5px black;
     text-shadow: 1px 1px 2px rgba(65, 61, 61,1);
@@ -262,5 +270,5 @@ body {
     align-items: center;
     font-family: 'Cormorant Infant', serif;
     color:rgba(43, 39, 39,1);
-    padding: 0px 5px;
+    padding: 10px 5px;
 }
