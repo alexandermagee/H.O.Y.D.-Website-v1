@@ -83,10 +83,6 @@ body {
     white-space: nowrap;
 }
 
-.heading h1, h3 {
-    /*padding: 0px;
-    margin: 0px; */
-}
 
 .heading h3 {
     grid-area: subheading;
@@ -241,6 +237,7 @@ body {
     justify-content: center;
     font-family: 'Fondamento', cursive;
     background-color: rgba(255, 255, 255,0.4);
+    text-align: center;
 }
 
 .findMore h2 {
@@ -278,6 +275,8 @@ body {
 
 /*Media Queries */
 
+/* Smaller desktop, resizing styling */
+
 @media only screen and (max-width: 1018px) {
     .heading {
         padding: 5px 5px;
@@ -292,14 +291,21 @@ body {
         font-size: 3.7vw;
     }
 
+    .heading img {
+        max-height: 80px;
+    }
+
     .navBar a {
         font-size: 1.6em;
-       
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 }
 
-@media only screen and (max-width: 758px){
+/* Mobile device styling */
+
+@media only screen and (max-width: 640px){
     .navBar {
         padding: 0px 5% 10px;
     }
@@ -309,13 +315,20 @@ body {
         white-space: nowrap;
     }
 
+    .heading div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .heading img {
         width: 70%;
         border: none;
+        display: none;
     }
 
     .heading h1 {
-       font-size: 1.7em;
+       font-size: 2.2em;
     }
 
     body {
@@ -323,11 +336,45 @@ body {
     }
 
     .box {
-        min-width: 90%;
+        min-width: 70%;
+        min-height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .box h2 {
+        font-size: 1em;
+    }
+
+    .box h2, p {
+        width: 100%;
+    }
+
+    .box p {
+        font-size: 0.8em;
     }
 
     .navBar {
         justify-content: center;
+    }
+
+    .when {
+        background-image: url("Images/Compressed/Switzer garden-min.jpg");
+        background-position: 50% 30%;
+    }
+
+    .who {
+        background-image: url("Images/Compressed/MrSumner.jpg");
+        background-position: 50% 20%;
+    }
+
+    .how {
+        background-image: url("Images/Compressed/Homepage change-min.JPG");
+        background-position: center
+    }
+
+    .content {
+        padding-bottom: 0px;
+        padding-top: 20px;
     }
 
     
