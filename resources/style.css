@@ -12,12 +12,13 @@ body {
     padding-bottom: 0px;
     border: ridge 15px rgba(107, 71, 36,1);
     background-color: rgba(248, 233, 173,0.8);
+    min-width: 100%;
 }
 
 /* Setting up the main grid template */
 
 .container {
-    background-image: url("Images/background.JPG");
+    background-image: url("Images/Compressed/background-min.JPG");
     background-size: auto 1500px; 
     /*background-color: rgba(255, 255, 255,0.3); */
     width: 100%;
@@ -123,6 +124,7 @@ body {
     font-family: 'Cormorant Infant', serif;
     transition: border-bottom 0.5s ease-in;
     border-bottom: 1px solid rgba(43, 39, 39,0);
+    padding: 0px 10px;
 }
 
 .navBar a:hover {
@@ -189,7 +191,7 @@ body {
     border-radius: 2px;
     border: 1px solid rgba(43, 39, 39,1);
     margin-top: 0px;
-    font-size: 1.8vw;
+    font-size: 1.3em;
 }
 
 .box:hover p {
@@ -197,7 +199,7 @@ body {
 }
 
 .box:hover h2 {
-    font-size: 1.9vw;
+    font-size: 1.5em;
 }
 
 .box p:hover {
@@ -209,7 +211,7 @@ body {
 
 .when {
    /* background-image: url("Images/Tudor door.JPG"); */
-   background-image: url("Images/combined-image-2.jpg");
+   background-image: url("Images/Compressed/combined-image-2-min.jpg");
 }
 
 .why {
@@ -221,11 +223,12 @@ body {
     background-position: left, right;
     background-repeat: no-repeat, repeat;
     background-size: contain; */
-    background-image: url("Images/combined-image-1.jpg");
+    background-image: url("Images/Compressed/combined-image-1-min.jpg");
 }
 
 .how{
-    background-image: url("Images/Homepage change.JPG");
+    /*background-image: url("Images/Homepage change.JPG"); */
+    background-image: url("Images/Compressed/Homepage change-min.JPG");
 }
 
 
@@ -271,4 +274,61 @@ body {
     font-family: 'Cormorant Infant', serif;
     color:rgba(43, 39, 39,1);
     padding: 10px 5px;
+}
+
+/*Media Queries */
+
+@media only screen and (max-width: 1018px) {
+    .heading {
+        padding: 5px 5px;
+    }
+
+    .heading div {
+        width: 95%;
+        font-size: 2.4vw;
+        padding: 20px 0px;
+    }
+    .heading h3 {
+        font-size: 3.7vw;
+    }
+
+    .navBar a {
+        font-size: 1.6em;
+       
+    }
+
+}
+
+@media only screen and (max-width: 758px){
+    .navBar {
+        padding: 0px 5% 10px;
+    }
+
+    .navBar a {
+        font-size: 1.2em;
+        white-space: nowrap;
+    }
+
+    .heading img {
+        width: 70%;
+        border: none;
+    }
+
+    .heading h1 {
+       font-size: 1.7em;
+    }
+
+    body {
+        border: ridge 5px rgba(107, 71, 36,1);
+    }
+
+    .box {
+        min-width: 90%;
+    }
+
+    .navBar {
+        justify-content: center;
+    }
+
+    
 }
