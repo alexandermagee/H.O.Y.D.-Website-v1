@@ -19,13 +19,13 @@ body {
 
 .container {
     background-image: url("Images/Compressed/background-min.JPG");
-    background-size: auto 1500px; 
+    background-size: 120%; 
     /*background-color: rgba(255, 255, 255,0.3); */
     width: 100%;
     min-height: fit-content;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: fit-content fit-content fit-content fit-content 20%;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
     "heading"
     "navBar"
@@ -301,6 +301,10 @@ body {
         padding-right: 5px;
     }
 
+    .box { 
+        max-width: 450px;
+    }
+
 }
 
 /* Mobile device styling */
@@ -364,7 +368,7 @@ body {
 
     .who {
         background-image: url("Images/Compressed/MrSumner.jpg");
-        background-position: 50% 20%;
+        background-position: 50% 10%;
     }
 
     .how {
@@ -376,6 +380,6 @@ body {
         padding-bottom: 0px;
         padding-top: 20px;
     }
-
+    
     
 }
