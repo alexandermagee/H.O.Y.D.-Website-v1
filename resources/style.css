@@ -1,7 +1,9 @@
+/* !!! MAIN / INDEX.HTML PAGE STYLING !!! */
+
+
 /*Universal and body styling */
 
 * {
-    /*font-family: 'Fondamento', cursive;*/
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -20,7 +22,6 @@ body {
 .container {
     background-image: url("Images/Compressed/background-min.JPG");
     background-size: 120%; 
-    /*background-color: rgba(255, 255, 255,0.3); */
     width: 100%;
     min-height: fit-content;
     display: grid;
@@ -48,18 +49,15 @@ body {
     align-items: center;
     border: none;
     padding: 10px 0px;
-    background-color: rgba(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173,0.9);
     height: 100%;
     width: 100%;
 }
 
 .heading div {
-    /*text-align: center; */
-    /*font-size: 1.7em; */
     font-size: 2.2vw;
     text-align: center;
     background-color: rgba(142, 153, 99,1);
-    /*padding: 10px 40px; */
     border-radius: 5px;
     border: double 5px black;
     width: 85%;
@@ -91,7 +89,6 @@ body {
 }
 
 .heading img {
-    /*max-height: 90%;*/
     max-height: 110px;
     min-height: 30px;
     grid-area: img;
@@ -108,7 +105,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border: none;
-    background-color: rgba(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173,0.9);
     border-bottom: double 5px black;
     padding: 0px 20% 10px 20%;
 }
@@ -124,9 +121,7 @@ body {
 }
 
 .navBar a:hover {
-    /*border-top: 1px solid grey;*/
     border-bottom: 1px solid rgba(43, 39, 39,1);
-   /* border-top: 1px solid grey; */
 }
 
 /* Content area */
@@ -153,11 +148,9 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    /*background-image: url("https://via.placeholder.com/500x300");*/
     border-radius: 2px;
     box-shadow: 8px 8px 5px rgba(90, 88, 88,0.4);
     background-size: cover;
-    /*border: ridge 5px rgba(107, 71, 36) */
     border: solid 2px rgba(43, 39, 39,1);
 }
 
@@ -165,9 +158,6 @@ body {
     font-size: 1.5em;
 }
 
-.box h2 p {
-    /*font-family: 'Cormorant Infant', serif;*/
-}
 
 .box p {
     opacity: 0;
@@ -206,7 +196,6 @@ body {
 /*individual boxes in content area */
 
 .when {
-   /* background-image: url("Images/Tudor door.JPG"); */
    background-image: url("Images/Compressed/combined-image-2-min.jpg");
 }
 
@@ -215,15 +204,10 @@ body {
 }
 
 .who {
-    /*background-image: url("Images/MrSumner.jpg"),url("Images/James Mangles.JPG");
-    background-position: left, right;
-    background-repeat: no-repeat, repeat;
-    background-size: contain; */
     background-image: url("Images/Compressed/combined-image-1-min.jpg");
 }
 
 .how{
-    /*background-image: url("Images/Homepage change.JPG"); */
     background-image: url("Images/Compressed/Homepage change-min.JPG");
 }
 
@@ -323,6 +307,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .heading img {
@@ -381,5 +368,110 @@ body {
         padding-top: 20px;
     }
     
+    .findMore h2 {
+        font-size: 1.8em;
+        padding: 0px 10px;
+    }
     
+}
+
+
+/* !!! OUR SERVICES / SERVICES.HTML PAGE STYLING !!! */
+
+
+
+.servicesContainer {
+    background-image: url("Images/Compressed/background-min.JPG");
+    background-size: 120%; 
+    min-height: fit-content;
+    background-color:rgba(255, 255, 255,0.3);
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "heading"
+    "navBar"
+    "servicesContent"
+    "footer"
+}
+
+.servicesContentHolder {
+    grid-area: servicesContent;
+    min-height: 500px;
+    padding: 20px 0px;
+    background-image: url("Images/Background 2.JPG");
+    background-size: cover;
+}
+
+.servicesContent {
+    width: 60%;
+    min-height: 100%;
+    margin: 0px auto;
+    font-family:'Cormorant Infant', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(248, 233, 173,0.9);
+    border: double 5px black;
+    color:rgba(43, 39, 39,1);
+}
+
+.servicesContent h1 {
+    font-size: 2.9em;
+    text-decoration: underline;
+}
+
+.servicesContent h2 {
+    font-size: 1.8em;
+}
+
+.servicesContent h3 {
+    color: rgb(65, 75, 20);
+    font-size: 1.4em;
+}
+
+.servicesContent p {
+    font-size: 1.2em;
+}
+
+
+.servicesContent span, a {
+    text-decoration: underline;
+    color:rgba(43, 39, 39,1);
+}
+
+.servicesContent section, article {
+   padding: 20px 10px;
+}
+
+@media only screen and (max-width: 1018px) {
+    .servicesContent {
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (max-width: 640px){
+
+.servicesContent {
+    width: 95%;
+}
+
+.servicesContent h1 {
+    font-size: 2.3em;
+}
+
+.servicesContent h2 {
+    font-size: 1.4em;
+}
+
+.servicesContent h3 {
+    font-size: 1.2em;
+}
+
+.servicesContent p {
+    font-size: 1em;
+}
 }
