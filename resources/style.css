@@ -316,6 +316,7 @@ body {
         min-width: fit-content;
         padding-left: 5px;
         padding-right: 5px;
+        min-height: 40vw;
     }
 
     .heading img {
@@ -325,7 +326,12 @@ body {
     }
 
     .heading h1 {
-       font-size: 2.2em;
+       font-size: 3.5em;
+       white-space: normal;
+    }
+
+    .heading h3 {
+        font-size: 2.1em;
     }
 
     body {
@@ -498,6 +504,112 @@ body {
     grid-template-areas: 
     "heading"
     "navBar"
-    "aboutContent"
+    "aboutImages"
     "footer"
+}
+
+.aboutImages {
+    display: flex;
+    padding: 30px 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.aboutImages img {
+max-height: 225px;
+margin: 10px 10px;
+border-radius: 2px;
+box-shadow: 8px 8px 5px rgba(90, 88, 88,0.4);
+border: solid 2px rgba(43, 39, 39,1);
+}
+
+.aboutInfo {
+    font-family:'Cormorant Infant', serif;
+    position: absolute;
+    top: 400px;
+    left: 22%;
+    z-index: 1;
+    margin: 0px auto;
+    text-align: center;
+    width: 60%;
+    background-color: rgba(248, 233, 173,0.95);
+    border: double 5px black;
+    padding: 20px 20px;
+}
+
+.aboutInfo h1, h3, p {
+    padding: 20px 0px;
+}
+
+.aboutInfo h1 {
+    font-size: 2.9em;
+    text-decoration: underline;
+}
+
+.aboutInfo h3 {
+    color: rgb(65, 75, 20);
+    font-size: 1.4em;
+}
+
+.aboutInfo p {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 820px) {
+    .aboutImages {
+        padding: 30px 5px;
+    }
+
+    .aboutImages img {
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+.aboutImages {
+    padding: 450px 2px 20px;
+
+}
+
+.aboutImages img {
+    max-height: 150px;
+    margin: 2px 2px;
+}
+
+.aboutInfo {
+    top: 350px;
+    width: 80%;
+    left: 10%;
+}
+
+.aboutInfo h1 {
+    font-size: 2.4em;
+}
+
+.aboutInfo h3 {
+    font-size: 1.2em;
+}
+
+.aboutInfo p {
+    font-size: 1.0em;
+}
+
+.aboutInfo h1, h3, p {
+    padding: 5px 0px;
+}
+
+}
+
+@media only screen and (max-width: 490px){
+    .aboutImages {
+        padding-top: 500px;
+    }
+
+    .aboutInfo {
+        top: 280px;
+        left: 1%;
+        width: 98%;
+
+    }
 }
