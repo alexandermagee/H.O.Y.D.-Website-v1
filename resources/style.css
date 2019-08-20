@@ -12,8 +12,8 @@
 body {
     height: 100%;
     padding-bottom: 0px;
-    border: ridge 15px rgba(107, 71, 36,1);
-    background-color: rgba(248, 233, 173,0.8);
+    border: ridge 15px rgba(107, 71, 36, 1);
+    background-color: rgba(248, 233, 173, 0.8);
     min-width: 100%;
 }
 
@@ -21,22 +21,22 @@ body {
 
 .container {
     background-image: url("Images/Compressed/background-min.JPG");
-    background-size: cover; 
+    background-size: cover;
     width: 100%;
     min-height: fit-content;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-    "heading"
-    "navBar"
-    "content"
-    "findMore"
-    "footer"
+    grid-template-areas:
+        "heading"
+        "navBar"
+        "content"
+        "findMore"
+        "footer"
 }
 
 .cell {
-    background-color: rgba(255, 255, 255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -49,7 +49,7 @@ body {
     align-items: center;
     border: none;
     padding: 10px 0px;
-    background-color: rgba(248, 233, 173,0.9);
+    background-color: rgba(248, 233, 173, 0.9);
     height: 100%;
     width: 100%;
 }
@@ -57,7 +57,7 @@ body {
 .heading div {
     font-size: 2.2vw;
     text-align: center;
-    background-color: rgba(142, 153, 99,1);
+    background-color: rgb(142, 153, 99);
     border-radius: 5px;
     border: double 5px black;
     width: 85%;
@@ -68,16 +68,16 @@ body {
     grid-template-rows: 60% 40%;
     align-items: center;
     justify-items: center;
-    grid-template-areas: 
-    "img heading"
-    "img subheading"
+    grid-template-areas:
+        "img heading"
+        "img subheading"
 }
 
 .heading h1 {
     grid-area: heading;
     height: 90%;
     font-family: 'Fondamento', cursive;
-    text-shadow: 2px 2px 5px rgba(65, 61, 61,1);
+    text-shadow: 2px 2px 5px rgba(65, 61, 61, 1);
     white-space: nowrap;
 }
 
@@ -85,7 +85,7 @@ body {
 .heading h3 {
     grid-area: subheading;
     font-family: 'Cormorant Infant', serif;
-    text-shadow: 1px 1px 2px rgba(65, 61, 61,1);
+    text-shadow: 1px 1px 2px rgba(65, 61, 61, 1);
 }
 
 .heading img {
@@ -105,7 +105,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border: none;
-    background-color: rgba(248, 233, 173,0.9);
+    background-color: rgba(248, 233, 173, 0.9);
     border-bottom: double 5px black;
     padding: 0px 20% 10px 20%;
 }
@@ -116,12 +116,12 @@ body {
     color: black;
     font-family: 'Cormorant Infant', serif;
     transition: border-bottom 0.5s ease-in;
-    border-bottom: 1px solid rgba(43, 39, 39,0);
+    border-bottom: 1px solid rgba(43, 39, 39, 0);
     /*padding: 0px 10px; */
 }
 
 .navBar a:hover {
-    border-bottom: 1px solid rgba(43, 39, 39,1);
+    border-bottom: 1px solid rgba(43, 39, 39, 1);
 }
 
 /* Content area */
@@ -133,8 +133,8 @@ body {
     align-content: center;
     justify-content: center;
     font-family: 'Cormorant Infant', serif;
-    color: rgba(43, 39, 39,1);
-    background-color: rgba(255, 255, 255,0.4);
+    color: rgba(43, 39, 39, 1);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 40px 0px;
 }
 
@@ -144,14 +144,14 @@ body {
     min-height: 350px;
     margin: 1vw 1vw;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     border-radius: 2px;
-    box-shadow: 8px 8px 5px rgba(90, 88, 88,0.4);
+    box-shadow: 8px 8px 5px rgba(90, 88, 88, 0.4);
     background-size: cover;
-    border: solid 2px rgba(43, 39, 39,1);
+    border: solid 2px rgba(43, 39, 39, 1);
 }
 
 .box h2 strong {
@@ -162,20 +162,20 @@ body {
 .box p {
     opacity: 0;
     transition: opacity 3s;
-    background-color:rgba(248, 233, 173,0.9);
+    background-color: rgba(248, 233, 173, 0.9);
     padding: 10px 10px;
     margin: 2px 2px;
-    border: 1px solid rgba(43, 39, 39,1);
+    border: 1px solid rgba(43, 39, 39, 1);
     border-radius: 2px;
 }
 
 .box h2 {
-    background-color:rgba(248, 233, 173,0.9);
+    background-color: rgba(248, 233, 173, 0.9);
     transition: font-size 2s;
     width: 90%;
     padding: 5px 5px;
     border-radius: 2px;
-    border: 1px solid rgba(43, 39, 39,1);
+    border: 1px solid rgba(43, 39, 39, 1);
     margin-top: 0px;
     font-size: 1.3em;
 }
@@ -188,15 +188,11 @@ body {
     font-size: 1.5em;
 }
 
-.box p:hover {
-    color: rgba(15, 104, 104,1);
-    cursor: pointer;
-}
 
 /*individual boxes in content area */
 
 .when {
-   background-image: url("Images/Compressed/combined-image-2-min.jpg");
+    background-image: url("Images/Compressed/combined-image-2-min.jpg");
 }
 
 .why {
@@ -207,7 +203,7 @@ body {
     background-image: url("Images/Compressed/combined-image-1-min.jpg");
 }
 
-.how{
+.how {
     background-image: url("Images/Compressed/Homepage change-min.JPG");
 }
 
@@ -220,40 +216,44 @@ body {
     align-items: flex-start;
     justify-content: center;
     font-family: 'Fondamento', cursive;
-    background-color: rgba(255, 255, 255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
 }
 
 .findMore h2 {
     font-size: 2.2em;
-    background: rgba(248, 233, 173,0.9);
+    background: rgba(248, 233, 173, 0.9);
     width: fit-content;
     height: fit-content;
     padding: 10px 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: double 5px black;
-    text-shadow: 1px 1px 2px rgba(65, 61, 61,1);
+    text-shadow: 1px 1px 2px rgba(65, 61, 61, 1);
     transition: font-size 1s linear;
 }
 
 .findMore h2:hover {
     font-size: 2.3em;
     cursor: pointer;
-    color: rgba(13, 61, 61,1);
+    color: rgba(13, 61, 61, 1);
+}
+
+.findMore a {
+    text-decoration: none;
 }
 
 /* Footer area */
 
 .footer {
     grid-area: footer;
-    background-color: rgba(248, 233, 173,0.8);
+    background-color: rgba(248, 233, 173, 0.8);
     border-top: double 5px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Cormorant Infant', serif;
-    color:rgba(43, 39, 39,1);
+    color: rgba(43, 39, 39, 1);
     padding: 5px 5px;
 }
 
@@ -271,6 +271,7 @@ body {
         font-size: 2.4vw;
         padding: 20px 0px;
     }
+
     .heading h3 {
         font-size: 3.7vw;
     }
@@ -282,7 +283,8 @@ body {
     .navBar a {
         font-size: 1.6em;
         padding-left: 10px;
-        padding-right: 5px; /*
+        padding-right: 5px;
+        /*
         /*padding: 0px 10px; */
     }
 
@@ -290,7 +292,7 @@ body {
         padding: 0px 60px 10px 60px;
     }
 
-    .box { 
+    .box {
         max-width: 450px;
     }
 
@@ -298,10 +300,10 @@ body {
 
 /* Mobile device styling */
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px) {
     .navBar {
-       padding: 0px 0px;
-       flex-wrap: wrap;
+        padding: 0px 0px;
+        flex-wrap: wrap;
     }
 
     .navBar a {
@@ -327,8 +329,8 @@ body {
     }
 
     .heading h1 {
-       font-size: 3.5em;
-       white-space: normal;
+        font-size: 3.5em;
+        white-space: normal;
     }
 
     .heading h3 {
@@ -336,7 +338,7 @@ body {
     }
 
     body {
-        border: ridge 5px rgba(107, 71, 36,1);
+        border: ridge 5px rgba(107, 71, 36, 1);
     }
 
     .box {
@@ -349,12 +351,14 @@ body {
         font-size: 1.5em;
     }
 
-    .box h2, p {
+    .box h2,
+    p {
         width: 100%;
     }
 
     .box p {
-        font-size: 0.8em;
+        font-size: 1.2em;
+        opacity: 1;
     }
 
     .navBar {
@@ -380,17 +384,29 @@ body {
         padding-bottom: 0px;
         padding-top: 20px;
     }
-    
+
     .findMore h2 {
         font-size: 2.2em;
         padding: 30px 10px;
         min-height: 60px;
     }
-    
+
     .footer {
         padding: 5px 10%;
     }
+
+    /*REMOVE TRANSITIONS ON MOBILE TOUCH SCREENS */
+    * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
 }
+
+
+
 
 
 /* !!! OUR SERVICES / SERVICES.HTML PAGE STYLING !!! */
@@ -399,16 +415,16 @@ body {
 
 .servicesContainer {
     background-image: url("Images/Compressed/background-min.JPG");
-    background-size: cover; 
+    background-size: cover;
     min-height: fit-content;
-    background-color:rgba(255, 255, 255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "heading"
-    "navBar"
-    "servicesContent"
-    "footer"
+    grid-template-areas:
+        "heading"
+        "navBar"
+        "servicesContent"
+        "footer"
 }
 
 .servicesContentHolder {
@@ -423,15 +439,15 @@ body {
     width: 60%;
     min-height: 100%;
     margin: 0px auto;
-    font-family:'Cormorant Infant', serif;
+    font-family: 'Cormorant Infant', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background-color: rgba(248, 233, 173,0.9);
+    background-color: rgba(248, 233, 173, 0.9);
     border: double 5px black;
-    color:rgba(43, 39, 39,1);
+    color: rgba(43, 39, 39, 1);
 }
 
 .servicesContent h1 {
@@ -453,13 +469,15 @@ body {
 }
 
 
-.servicesContent span, a {
+.servicesContent span,
+a {
     text-decoration: underline;
-    color:rgba(43, 39, 39,1);
+    color: rgba(43, 39, 39, 1);
 }
 
-.servicesContent section, article {
-   padding: 20px 10px;
+.servicesContent section,
+article {
+    padding: 20px 10px;
 }
 
 @media only screen and (max-width: 1018px) {
@@ -470,27 +488,27 @@ body {
 }
 
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px) {
 
-.servicesContent {
-    width: 95%;
-}
+    .servicesContent {
+        width: 95%;
+    }
 
-.servicesContent h1 {
-    font-size: 2.3em;
-}
+    .servicesContent h1 {
+        font-size: 2.3em;
+    }
 
-.servicesContent h2 {
-    font-size: 1.4em;
-}
+    .servicesContent h2 {
+        font-size: 1.4em;
+    }
 
-.servicesContent h3 {
-    font-size: 1.2em;
-}
+    .servicesContent h3 {
+        font-size: 1.2em;
+    }
 
-.servicesContent p {
-    font-size: 1em;
-}
+    .servicesContent p {
+        font-size: 1em;
+    }
 }
 
 
@@ -498,16 +516,16 @@ body {
 
 .aboutContainer {
     background-image: url("Images/Compressed/background-min.JPG");
-    background-size: cover; 
+    background-size: cover;
     min-height: fit-content;
-    background-color:rgba(255, 255, 255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "heading"
-    "navBar"
-    "aboutImages"
-    "footer"
+    grid-template-areas:
+        "heading"
+        "navBar"
+        "aboutImages"
+        "footer"
 }
 
 .aboutImages {
@@ -519,15 +537,15 @@ body {
 }
 
 .aboutImages img {
-max-height: 225px;
-margin: 10px 10px;
-border-radius: 2px;
-box-shadow: 8px 8px 5px rgba(90, 88, 88,0.4);
-border: solid 2px rgba(43, 39, 39,1);
+    max-height: 225px;
+    margin: 10px 10px;
+    border-radius: 2px;
+    box-shadow: 8px 8px 5px rgba(90, 88, 88, 0.4);
+    border: solid 2px rgba(43, 39, 39, 1);
 }
 
 .aboutInfo {
-    font-family:'Cormorant Infant', serif;
+    font-family: 'Cormorant Infant', serif;
     position: absolute;
     top: 400px;
     left: 22%;
@@ -535,19 +553,21 @@ border: solid 2px rgba(43, 39, 39,1);
     margin: 0px auto;
     text-align: center;
     width: 60%;
-    background-color: rgba(248, 233, 173,0.95);
+    background-color: rgba(248, 233, 173, 0.95);
     border: double 5px black;
     padding: 20px 20px;
 }
 
-.aboutInfo h1, h3, p {
+.aboutInfo h1,
+h3,
+p {
     padding: 20px 0px;
 }
 
 .aboutInfo h1 {
     font-size: 2.9em;
     text-decoration: underline;
-    color:rgba(43, 39, 39,1);
+    color: rgba(43, 39, 39, 1);
 }
 
 .aboutInfo h3 {
@@ -570,47 +590,49 @@ border: solid 2px rgba(43, 39, 39,1);
 }
 
 @media only screen and (max-width: 695px) {
-.aboutImages {
-    padding: 450px 2px 20px;
-
-}
-
-.aboutImages img {
-    max-height: 150px;
-    margin: 2px 2px;
-}
-
-.aboutInfo {
-    top: 350px;
-    width: 80%;
-    left: 10%;
-}
-
-.aboutInfo h1 {
-    font-size: 2.4em;
-}
-
-.aboutInfo h3 {
-    font-size: 1.2em;
-}
-
-.aboutInfo p {
-    font-size: 1.0em;
-}
-
-.aboutInfo h1, h3, p {
-    padding: 5px 0px;
-}
-
-}
-
-@media only screen and (max-width: 490px){
     .aboutImages {
-        padding-top: 500px;
+        padding: 450px 2px 20px;
+
+    }
+
+    .aboutImages img {
+        max-height: 150px;
+        margin: 2px 2px;
     }
 
     .aboutInfo {
-        top: 250px;
+        top: 350px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .aboutInfo h1 {
+        font-size: 2.4em;
+    }
+
+    .aboutInfo h3 {
+        font-size: 1.2em;
+    }
+
+    .aboutInfo p {
+        font-size: 1.0em;
+    }
+
+    .aboutInfo h1,
+    h3,
+    p {
+        padding: 5px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    .aboutImages {
+        padding-top: 600px;
+    }
+
+    .aboutInfo {
+        top: 350px;
         left: 1%;
         width: 98%;
 
@@ -691,7 +713,7 @@ border: solid 2px rgba(43, 39, 39,1);
         width: 80%;
     }
 
-    .contactInfo, 
+    .contactInfo,
     .contactForm {
         width: 50%;
     }
@@ -702,9 +724,9 @@ border: solid 2px rgba(43, 39, 39,1);
             width: 90%
         }
 
-        .contactInfo, 
+        .contactInfo,
         .contactForm {
             width: 80%;
-    }
+        }
 
     }
