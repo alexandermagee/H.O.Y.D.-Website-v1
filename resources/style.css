@@ -161,7 +161,7 @@ body {
 .box {
     max-width: 40vw;
     min-width: 350px;
-    min-height: 350px;
+    min-height: 400px;
     margin: 1vw 1vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -302,8 +302,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     font-family: 'Cormorant Infant', serif;
+    font-size: 0.8em;
     color: rgba(43, 39, 39, 1);
-    padding: 5px 5px;
+    padding: 2px 2px;
 }
 
 /*Media Queries */
