@@ -184,9 +184,6 @@ body {
     border: solid 2px rgba(43, 39, 39, 1);
 }
 
-.box h2 strong {
-    font-size: 1.5em;
-}
 
 
 .box p {
@@ -209,7 +206,7 @@ body {
     border-radius: 2px;
     border: 1px solid rgba(43, 39, 39, 1);
     margin-top: 0px;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 .box:hover p {
@@ -217,26 +214,26 @@ body {
 }
 
 .box:hover h2 {
-    font-size: 1.5em;
+    font-size: 2.0em;
 }
 
 
 /*individual boxes in content area */
 
 .when {
-    background-image: url("Images/Compressed/combined-image-2-min.jpg");
+    background-image: url("Images/Compressed/Homepage change-min.JPG");
 }
 
 .why {
-    background-image: url("Images/Homepage tollhouse.jpg");
+    background-image: url("Images/Compressed/Keepers\ Cottage\ \(8\).JPG");
 }
 
 .who {
-    background-image: url("Images/Compressed/combined-image-1-min.jpg");
+    background-image: url("Images/Compressed/combined-image-2.jpg");
 }
 
-.how {
-    background-image: url("Images/Compressed/Homepage change-min.JPG");
+.owners {
+    background-image: url("Images/Compressed/combined-image-2-min.jpg");
 }
 
 
@@ -427,18 +424,13 @@ body {
                 justify-content: center;
     }
 
-    .when {
-        background-image: url("Images/Compressed/Switzer garden-min.jpg");
-        background-position: 50% 30%;
-    }
-
     .who {
         background-image: url("Images/Compressed/MrSumner.jpg");
         background-position: 50% 10%;
     }
 
-    .how {
-        background-image: url("Images/Compressed/Homepage change-min.JPG");
+    .owners {
+        background-image: url("Images/Compressed/Switzer garden-min.jpg");
         background-position: center
     }
 
@@ -622,10 +614,14 @@ article {
     border: solid 2px rgba(43, 39, 39, 1);
 }
 
+#longImage {
+    max-width: 40vw;
+}
+
 .aboutInfo {
     font-family: 'Cormorant Infant', serif;
     position: absolute;
-    top: 400px;
+    top: 350px;
     left: 22%;
     z-index: 1;
     margin: 0px auto;
@@ -636,21 +632,23 @@ article {
     padding: 20px 20px;
 }
 
-.aboutInfo h1,
-h3,
-p {
+.aboutInfo h1 {
     padding: 20px 0px;
+}
+
+.aboutInfo h3,
+p {
+    padding: 10px 0px;
 }
 
 .aboutInfo h1 {
     font-size: 2.9em;
-    text-decoration: underline;
     color: rgba(43, 39, 39, 1);
 }
 
 .aboutInfo h3 {
-    color: rgb(65, 75, 20);
-    font-size: 1.4em;
+    color: rgba(43, 39, 39, 1);
+    font-size: 1.6em;
 }
 
 .aboutInfo p {
@@ -665,6 +663,8 @@ p {
     .aboutImages img {
         max-height: 200px;
     }
+
+    
 }
 
 @media only screen and (max-width: 695px) {
